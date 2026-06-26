@@ -1,0 +1,155 @@
+@import "tailwindcss";
+@import "../styles/typography.css";
+@import "../styles/animations.css";
+
+:root {
+  /* --- Core brand (logo-derived, §02 logo anatomy) --- */
+  --deep-navy: #0d1f3c; /* icon background */
+  --primary: #1e5a98; /* 247 badge */
+  --wordmark: #1a3a5f; /* wordmark text */
+  --brand-mint: #d1f5ee;
+
+  /* --- Extended palette --- */
+  --primary-dark: #0d1f3c;
+  --primary-light: #2d6ab5;
+  --pale-blue: #d6e8f8;
+  --mid-mint: #7dd4c0;
+  --deep-mint: #1a9e80;
+
+  /* --- Semantic aliases --- */
+  --secondary: var(--deep-mint);
+  --secondary-light: var(--brand-mint);
+  --secondary-dark: var(--deep-mint);
+
+  --accent: var(--mid-mint);
+  --accent-light: var(--brand-mint);
+  --accent-dark: var(--deep-mint);
+
+  /* --- Backgrounds & surfaces --- */
+  --background: #ffffff;
+  --surface: #f3f7fc;
+  --surface-alt: var(--brand-mint);
+
+  /* --- Text --- */
+  --text-primary: #0f1e30;
+  --text-secondary: #4e6580;
+  --text-disabled: #a8c4dc;
+  --text-on-dark: #ffffff;
+
+  /* --- Borders & neutrals (§03) --- */
+  --cloud: #dce6f0;
+  --border: var(--cloud);
+  --border-light: var(--surface);
+
+  /* --- Brand gradients (pale-blue · mint · surface) --- */
+  --gradient-hero: linear-gradient(
+    180deg,
+    var(--pale-blue) 0%,
+    var(--surface) 100%
+  );
+  --gradient-story: linear-gradient(
+    180deg,
+    var(--pale-blue) 0%,
+    var(--brand-mint) 55%,
+    var(--surface) 100%
+  );
+  --gradient-services-page: linear-gradient(
+    180deg,
+    var(--brand-mint) 0%,
+    var(--surface) 50%,
+    var(--background) 100%
+  );
+  --gradient-service-hero: linear-gradient(
+    135deg,
+    var(--pale-blue) 0%,
+    var(--surface) 40%,
+    var(--background) 100%
+  );
+  --gradient-service-hero-mint: linear-gradient(
+    135deg,
+    var(--brand-mint) 0%,
+    var(--surface) 45%,
+    var(--background) 100%
+  );
+
+  /* --- Spacing scale (8pt grid) --- */
+  --space-xs: 8px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+}
+
+@theme inline {
+  /* --- Colors --- */
+  --color-deep-navy: var(--deep-navy);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-wordmark: var(--wordmark);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-light: var(--secondary-light);
+  --color-secondary-dark: var(--secondary-dark);
+
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-accent-dark: var(--accent-dark);
+
+  --color-brand-mint: var(--brand-mint);
+  --color-pale-blue: var(--pale-blue);
+  --color-mid-mint: var(--mid-mint);
+  --color-deep-mint: var(--deep-mint);
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+
+  --color-ink: var(--text-primary);
+  --color-slate: var(--text-secondary);
+  --color-disabled: var(--text-disabled);
+  --color-on-dark: var(--text-on-dark);
+
+  --color-cloud: var(--cloud);
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+
+  /* --- Fonts --- */
+  --font-heading: var(--font-outfit);
+  --font-body: var(--font-nunito-sans);
+
+  /* --- Border radius (brand spec) --- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Homepage intro — blocks any flash before React mounts the loader */
+#intro-preflight:not([data-active]) {
+  display: none;
+}
+
+body:has(#intro-preflight[data-active]) {
+  overflow: hidden;
+}
+
+#intro-preflight[data-active] {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: var(--surface);
+  pointer-events: all;
+}
