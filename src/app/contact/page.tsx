@@ -40,7 +40,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Visit Us",
-    value: "New York, NY, USA",
+    value: "Westford, MA, USA",
     href: "#",
     color: "var(--wordmark)",
     bg: "var(--brand-mint)",
