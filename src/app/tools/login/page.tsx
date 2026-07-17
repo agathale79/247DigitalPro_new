@@ -180,7 +180,7 @@ function LoginContent() {
               </div>
               <p className="text-xs text-slate mb-4">
                 OTP will be sent to{" "}
-                <span className="font-semibold text-ink">{e164 ?? "—"}</span>
+                <span className="font-semibold text-ink">{e164 ?? "-"}</span>
               </p>
               <div id="recaptcha-container" />
               <button

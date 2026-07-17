@@ -32,7 +32,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     client: "Abacuzz",
     category: "SaaS Platform",
     heroDescription:
-      "Built for abacus students, academies, and organizations — an AI-powered platform to test and track student performance in a simple, accurate way.",
+      "Built for abacus students, academies, and organizations - an AI-powered platform to test and track student performance in a simple, accurate way.",
     image: "/images/portfolio/abacuzz.png",
     accent: "#7c3aed",
     externalUrl: "https://www.abacuzz.in/landing",
@@ -40,7 +40,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       title: "What is Abacuzz?",
       paragraphs: [
         "Abacuzz is an AI-powered platform that helps abacus academies test and track student performance with clarity and confidence.",
-        "Practice smarter, test faster, and compete online — with real data behind every result.",
+        "Practice smarter, test faster, and compete online - with real data behind every result.",
       ],
       subsections: [
         {
@@ -97,9 +97,9 @@ export const portfolioDetails: PortfolioDetail[] = [
     why: {
       title: "Why Abacuzz?",
       bullets: [
-        "No manual work — everything is automated",
-        "No guesswork — only data-based results",
-        "Not just practice — real performance tracking",
+        "No manual work - everything is automated",
+        "No guesswork - only data-based results",
+        "Not just practice - real performance tracking",
       ],
       paragraphs: [
         "If you can't measure progress, you can't improve it.",
@@ -136,14 +136,14 @@ export const portfolioDetails: PortfolioDetail[] = [
     client: "Atlantic Awning",
     category: "Web Development",
     heroDescription:
-      "A modern digital presence for a New England awning leader since 1888 — showcasing custom commercial and residential shade solutions across Boston and beyond.",
+      "A modern digital presence for a New England awning leader since 1888 - showcasing custom commercial and residential shade solutions across Boston and beyond.",
     image: "/images/portfolio/atlantic-awning.png",
     accent: "#1e5a98",
     externalUrl: "https://atlantic-awning.com/",
     whatIsIt: {
       title: "What is Atlantic Awning?",
       paragraphs: [
-        "Atlantic Awning is a heritage awning company delivering custom commercial and residential shade solutions — from retractable awnings and storefront canopies to pergolas and vestibules.",
+        "Atlantic Awning is a heritage awning company delivering custom commercial and residential shade solutions - from retractable awnings and storefront canopies to pergolas and vestibules.",
         "This project focused on translating decades of craftsmanship into a clear, conversion-focused web experience.",
       ],
       bullets: [
@@ -182,7 +182,7 @@ export const portfolioDetails: PortfolioDetail[] = [
         "Structured content improves discoverability and lead quality",
       ],
       paragraphs: [
-        "Placeholder content — full case study details will be updated soon.",
+        "Placeholder content - full case study details will be updated soon.",
       ],
     },
     otherInfo: {

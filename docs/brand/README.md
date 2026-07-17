@@ -1,4 +1,4 @@
-# 247 Digital Pro — Brand Guidelines
+# 247 Digital Pro - Brand Guidelines
 
 **Source file:** [`247DigitalPro___Brand_Guidelines.pdf`](./247DigitalPro___Brand_Guidelines.pdf)  
 **Version:** 2.0 (2026) · Internal and approved partner use
@@ -61,12 +61,12 @@ Rules: one primary per section, max two CTAs per row, `min-h-11` touch target, `
 | Clear space ≥ 1× icon height | `Logo` padding |
 | No shadows / effects on logo | Unmodified `Image` only |
 
-Add official lockups to `public/brand/` — see [`public/brand/README.md`](../../public/brand/README.md).
+Add official lockups to `public/brand/` - see [`public/brand/README.md`](../../public/brand/README.md).
 
 ### Pages aligned (audit checklist)
 
-- [x] Home — all sections
-- [x] About — brand foundation content
+- [x] Home - all sections
+- [x] About - brand foundation content
 - [x] Services listing + detail layouts
 - [x] Contact, Portfolio, Products, Industries
 - [x] Resources, Blog, Case Studies, Testimonials, Support

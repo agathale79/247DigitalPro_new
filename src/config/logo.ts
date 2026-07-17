@@ -1,5 +1,5 @@
 /**
- * 02 — Logo System (Brand Guidelines v2.0)
+ * 02 - Logo System (Brand Guidelines v2.0)
  * @see docs/brand/247DigitalPro___Brand_Guidelines.pdf
  */
 
@@ -9,9 +9,9 @@ export const logoAnatomy = {
   wordmark: "#1a3a5f",
 } as const;
 
-/** Approved assets — add lockup PNG/SVG to public/brand/ when available */
+/** Approved assets - add lockup PNG/SVG to public/brand/ when available */
 export const logoAssets = {
-  /** Icon mark — favicons, compact placements, small UI */
+  /** Icon mark - favicons, compact placements, small UI */
   icon: "/icon-247.png",
   /** Full horizontal lockup on mint or white backgrounds */
   lockupLight: "/brand/logo-lockup-light.png",

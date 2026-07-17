@@ -195,7 +195,7 @@ export function ProcessSteps({
       From audit to <span className="text-primary">measurable growth</span>
     </>
   ),
-  subtitle = "A proven methodology — audit, strategy, execution, and optimization driven by real data, not guesswork.",
+  subtitle = "A proven methodology - audit, strategy, execution, and optimization driven by real data, not guesswork.",
   className,
 }: ProcessStepsProps) {
   return (

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { cn } from "@/lib/cn";
 
 /**
- * §09 Buttons & CTAs — Brand Guidelines v2.0
+ * §09 Buttons & CTAs - Brand Guidelines v2.0
  * - primary: #1E5A98 fill, white text (main conversion on light surfaces)
  * - outline: ghost + primary border (secondary alongside primary)
  * - mint: #D1F5EE fill, navy text (dark/navy backgrounds only)

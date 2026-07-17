@@ -35,7 +35,7 @@ export function ReportCard({
           </h3>
           <p className="text-xs text-slate mt-0.5 truncate">{item.url || item.brand}</p>
           <div className="flex flex-wrap gap-2 mt-2 text-xs">
-            <span className="font-bold text-primary">{item.overallScore ?? "—"}/100</span>
+            <span className="font-bold text-primary">{item.overallScore ?? "-"}/100</span>
             {item.grade ? (
               <span className="text-slate">Grade {item.grade}</span>
             ) : null}

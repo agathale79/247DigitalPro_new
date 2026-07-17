@@ -15,7 +15,7 @@ const tools = [
     icon: Globe,
     title: "Website AI Visibility Audit",
     description:
-      "SEO, AEO, GEO, performance, security, accessibility, and compliance — with prioritized fixes.",
+      "SEO, AEO, GEO, performance, security, accessibility, and compliance - with prioritized fixes.",
     cta: brandVoice.ctaAudit,
   },
   {
@@ -44,7 +44,7 @@ export default function ToolsHubPage() {
       <BrandedPageHero
         overline="Free growth tools"
         title="Audit your visibility"
-        description="Sign in with your mobile number, run free website and social audits, and save professional PDF reports — built for measurable marketing growth."
+        description="Sign in with your mobile number, run free website and social audits, and save professional PDF reports - built for measurable marketing growth."
       />
       <Container className="pb-24">
         {!loading && !user ? (

@@ -50,7 +50,7 @@ export function ProductPlatformsIntro() {
               Our Product Ecosystem
             </h2>
             <p className="mt-5 text-base sm:text-lead text-slate leading-relaxed max-w-xl">
-              Tools and platforms that support your marketing systems — from lead
+              Tools and platforms that support your marketing systems - from lead
               capture to reporting and optimization.
             </p>
           </motion.div>

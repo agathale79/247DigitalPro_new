@@ -5,11 +5,11 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Remove www (optional — uncomment if you want non-www)
+# Remove www (optional - uncomment if you want non-www)
 # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 # RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
-# Handle SPA routing — serve index.html for missing files
+# Handle SPA routing - serve index.html for missing files
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l

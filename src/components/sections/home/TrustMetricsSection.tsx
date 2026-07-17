@@ -8,13 +8,13 @@ import { siteConfig } from "@/config/site";
 import { trustMetrics } from "@/data/metrics";
 
 const techLogos = [
-  // Left column — Digital Marketing
+  // Left column - Digital Marketing
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg", alt: "Meta", top: "8%", left: "4%", size: 80, delay: 0 },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg", alt: "LinkedIn", top: "28%", left: "9%", size: 76, delay: 0.6 },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg", alt: "Google Ads", top: "50%", left: "3%", size: 72, delay: 1.4 },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg", alt: "X / Twitter", top: "70%", left: "8%", size: 74, delay: 0.3 },
 
-  // Right column — Web Development
+  // Right column - Web Development
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", alt: "React", top: "6%", right: "5%", size: 78, delay: 0.5 },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", alt: "Next.js", top: "25%", right: "3%", size: 76, delay: 1.0 },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg", alt: "Angular", top: "45%", right: "7%", size: 80, delay: 0.2 },

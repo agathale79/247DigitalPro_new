@@ -1,5 +1,5 @@
 /* ------------------------------------------------
-   Typography — Brand Guidelines v2.0
+   Typography - Brand Guidelines v2.0
    Outfit (headings & display) · Nunito Sans (body & UI)
    ------------------------------------------------ */
 
@@ -63,7 +63,7 @@
   font-family: var(--font-body), system-ui, sans-serif;
 }
 
-/* Dark sections — overrides global heading colors (wordmark navy on navy bg) */
+/* Dark sections - overrides global heading colors (wordmark navy on navy bg) */
 .surface-dark {
   color: var(--text-on-dark);
 }

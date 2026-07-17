@@ -19,7 +19,7 @@ export default function SupportPage() {
             We&apos;re your <span className="text-primary">strategic partner</span>
           </>
         }
-        description="Clear, direct help when you need it — the same transparency we bring to every engagement."
+        description="Clear, direct help when you need it - the same transparency we bring to every engagement."
       />
       <section className="pb-16 md:pb-24">
         <Container>

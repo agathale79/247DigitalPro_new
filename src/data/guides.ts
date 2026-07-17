@@ -43,7 +43,7 @@ export const allGuides: GuidePreview[] = [
   {
     title: "Google Ads Setup for Local Service Businesses",
     excerpt:
-      "From account structure to conversion tracking — build a lean campaign that generates qualified leads without wasting budget.",
+      "From account structure to conversion tracking - build a lean campaign that generates qualified leads without wasting budget.",
     category: "Paid Ads",
     slug: "google-ads-local-services",
     readTime: "15 min read",
@@ -54,7 +54,7 @@ export const allGuides: GuidePreview[] = [
     stepItems: [
       { title: "Link Google Ads & Analytics", description: "Connect GA4 and enable auto-tagging so every click carries campaign data into your reports." },
       { title: "Install conversion tracking", description: "Set up form submit, call, and booked-appointment conversions with values if possible." },
-      { title: "Build a tight keyword list", description: "Focus on high-intent local terms — service + city, emergency variants, and competitor alternatives." },
+      { title: "Build a tight keyword list", description: "Focus on high-intent local terms - service + city, emergency variants, and competitor alternatives." },
       { title: "Structure campaigns by intent", description: "Separate brand, high-intent non-brand, and remarketing into distinct campaigns with clear budgets." },
       { title: "Write ad copy with local proof", description: "Include city names, response time, reviews, and a single clear CTA per ad group." },
       { title: "Set geo-targeting & ad schedule", description: "Target your service radius and align spend with hours when your team can respond fast." },
@@ -76,11 +76,11 @@ export const allGuides: GuidePreview[] = [
       "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80",
     stepItems: [
       { title: "Audit existing content", description: "List top performers, thin pages, and gaps competitors rank for that you don't cover yet." },
-      { title: "Define 3–5 content pillars", description: "Align pillars to services and buyer questions — not random industry news." },
+      { title: "Define 3–5 content pillars", description: "Align pillars to services and buyer questions - not random industry news." },
       { title: "Map topics to funnel stage", description: "Tag each idea as awareness, consideration, or decision so CTAs match intent." },
-      { title: "Assign owners and deadlines", description: "One accountable person per piece — writer, reviewer, and publisher." },
+      { title: "Assign owners and deadlines", description: "One accountable person per piece - writer, reviewer, and publisher." },
       { title: "Batch production sprints", description: "Block two half-days per month for outlines and drafts instead of one-off heroics." },
-      { title: "Ship and measure monthly", description: "Track rankings, time on page, and assisted conversions — kill topics that don't move metrics." },
+      { title: "Ship and measure monthly", description: "Track rankings, time on page, and assisted conversions - kill topics that don't move metrics." },
     ],
   },
   {
@@ -95,7 +95,7 @@ export const allGuides: GuidePreview[] = [
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
     stepItems: [
-      { title: "Identify answer-worthy queries", description: "Pull questions from Search Console, sales calls, and support tickets — prioritize 'how' and 'what' phrasing." },
+      { title: "Identify answer-worthy queries", description: "Pull questions from Search Console, sales calls, and support tickets - prioritize 'how' and 'what' phrasing." },
       { title: "Create definitive answer blocks", description: "Lead with a 40–60 word direct answer, then expand with context, examples, and data." },
       { title: "Build FAQ schema", description: "Add JSON-LD FAQ markup on service and resource pages with matching on-page Q&A." },
       { title: "Strengthen entity signals", description: "Consistent NAP, About page, author bios, and Organization schema across the site." },
@@ -119,7 +119,7 @@ export const allGuides: GuidePreview[] = [
     stepItems: [
       { title: "Clarify the hero promise", description: "Within 5 seconds, visitors should know who you help, what outcome you deliver, and the next step." },
       { title: "Add proof above the fold", description: "Reviews, client logos, certifications, or a specific result metric near your primary CTA." },
-      { title: "Reduce form friction", description: "Ask only for name, email, and phone on first touch — save detail for the sales call." },
+      { title: "Reduce form friction", description: "Ask only for name, email, and phone on first touch - save detail for the sales call." },
       { title: "Test mobile tap targets", description: "CTAs should be thumb-friendly with 44px min height and visible on every scroll depth." },
       { title: "Speed up LCP", description: "Compress hero images, preload fonts, and defer non-critical scripts on landing pages." },
     ],
@@ -127,7 +127,7 @@ export const allGuides: GuidePreview[] = [
   {
     title: "Meta Ads Creative Testing Framework",
     excerpt:
-      "Run structured hook, offer, and audience tests — know when to kill underperformers and scale winners with confidence.",
+      "Run structured hook, offer, and audience tests - know when to kill underperformers and scale winners with confidence.",
     category: "Paid Ads",
     slug: "meta-ads-creative-testing",
     readTime: "13 min read",
@@ -137,12 +137,12 @@ export const allGuides: GuidePreview[] = [
       "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
     stepItems: [
       { title: "Define your testing matrix", description: "List variables: hook style, offer, format (static vs video), and audience segment." },
-      { title: "Set minimum spend per variant", description: "Allocate enough budget to exit learning phase — typically 50 conversions or 7 days, whichever comes first." },
-      { title: "Isolate one variable", description: "Change only the hook OR the visual OR the audience per test — never all three at once." },
+      { title: "Set minimum spend per variant", description: "Allocate enough budget to exit learning phase - typically 50 conversions or 7 days, whichever comes first." },
+      { title: "Isolate one variable", description: "Change only the hook OR the visual OR the audience per test - never all three at once." },
       { title: "Track hook rate & hold rate", description: "For video, measure 3-second views and thru-plays; for static, CTR and outbound clicks." },
       { title: "Score creatives on CPA", description: "Rank by cost per lead at equal spend, not vanity engagement." },
       { title: "Scale winners, kill losers fast", description: "Pause ads 20% above target CPA after minimum data; duplicate winners into new ad sets." },
-      { title: "Refresh creative monthly", description: "Even top performers fatigue — plan 2–4 new concepts per month per active campaign." },
+      { title: "Refresh creative monthly", description: "Even top performers fatigue - plan 2–4 new concepts per month per active campaign." },
     ],
   },
   {
@@ -157,7 +157,7 @@ export const allGuides: GuidePreview[] = [
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
     stepItems: [
-      { title: "Pick 5 KPIs max", description: "Leads, CPA, conversion rate, pipeline value, and channel mix — avoid report bloat." },
+      { title: "Pick 5 KPIs max", description: "Leads, CPA, conversion rate, pipeline value, and channel mix - avoid report bloat." },
       { title: "Connect ad platforms to CRM", description: "Ensure UTM discipline so every lead attributes to a source and campaign." },
       { title: "Build a one-page dashboard", description: "Use Looker Studio or Sheets with month-over-month and year-over-year comparisons." },
       { title: "Add a short narrative", description: "Three bullets: what worked, what didn't, and what you're doing next month." },
@@ -196,7 +196,7 @@ export const allGuides: GuidePreview[] = [
     image:
       "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80",
     stepItems: [
-      { title: "Define pipeline stages", description: "New lead → contacted → qualified → proposal → won/lost — keep stages actionable, not decorative." },
+      { title: "Define pipeline stages", description: "New lead → contacted → qualified → proposal → won/lost - keep stages actionable, not decorative." },
       { title: "Set SLAs per stage", description: "e.g. contact within 5 minutes, qualify within 24 hours, proposal within 3 business days." },
       { title: "Connect form & ad sources", description: "Pipe website forms, Meta leads, and Google Ads into CRM with source tags intact." },
       { title: "Automate nurture sequences", description: "Email or SMS follow-ups for leads that don't book on first touch." },

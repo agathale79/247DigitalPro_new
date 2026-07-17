@@ -18,29 +18,29 @@ const vision =
   "A world where every small business owner has access to enterprise-grade marketing strategy and execution, delivered with transparency and accountability.";
 
 const brandValues =
-  "Reliability. Transparency. ROI-focus. We are a strategic partner, not just a service provider — every engagement is built around qualified leads, conversions, and revenue outcomes.";
+  "Reliability. Transparency. ROI-focus. We are a strategic partner, not just a service provider - every engagement is built around qualified leads, conversions, and revenue outcomes.";
 
 const brandPersonality =
-  "We're not a vendor — we're an invested partner. Tone is collaborative, not transactional. We use \"we\" and \"together\" often.";
+  "We're not a vendor - we're an invested partner. Tone is collaborative, not transactional. We use \"we\" and \"together\" often.";
 
 const coreValues = [
   {
     icon: Shield,
     title: "Reliability",
     description:
-      "A strategic partner you can count on — consistent delivery, clear accountability, and systems built to last.",
+      "A strategic partner you can count on - consistent delivery, clear accountability, and systems built to last.",
   },
   {
     icon: Target,
     title: "Transparency",
     description:
-      "Open communication at every stage — you always know what we are doing, why, and how it ties to your goals.",
+      "Open communication at every stage - you always know what we are doing, why, and how it ties to your goals.",
   },
   {
     icon: BarChart3,
     title: "ROI-Focus",
     description:
-      "Every engagement centers on qualified leads, conversions, and revenue outcomes — not vanity metrics.",
+      "Every engagement centers on qualified leads, conversions, and revenue outcomes - not vanity metrics.",
   },
 ];
 

@@ -12,7 +12,7 @@ interface BrandCTAProps {
   className?: string;
 }
 
-/** §08 / §09 — Dark navy CTA block with mint + outline actions */
+/** §08 / §09 - Dark navy CTA block with mint + outline actions */
 export function BrandCTA({
   title = brandVoice.ctaDarkTitle,
   description = brandVoice.ctaConsultation,

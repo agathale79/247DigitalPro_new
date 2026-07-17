@@ -1,30 +1,30 @@
 /**
- * Brand Guidelines v2.0 — shared copy, services, and voice
+ * Brand Guidelines v2.0 - shared copy, services, and voice
  * @see docs/brand/247DigitalPro___Brand_Guidelines.pdf
  */
 
 import { siteConfig } from "@/config/site";
 
-/** §07 — Tone of Voice intro */
+/** §07 - Tone of Voice intro */
 export const brandToneIntro = [
-  "We speak like a trusted advisor — knowledgeable, confident, and direct.",
+  "We speak like a trusted advisor - knowledgeable, confident, and direct.",
   "We talk in outcomes and business results, not features and tech jargon.",
 ] as const;
 
-/** §07 — Four tone pillars (2×2 grid) */
+/** §07 - Four tone pillars (2×2 grid) */
 export const brandTonePillars = [
   {
     emoji: "🎯",
     title: "Outcome-Focused",
     description:
-      "We lead with results — leads, revenue, and growth — not with features. Every message connects back to what the client actually gains.",
+      "We lead with results - leads, revenue, and growth - not with features. Every message connects back to what the client actually gains.",
     surface: "pale" as const,
   },
   {
     emoji: "🤝",
     title: "Strategic Partner",
     description:
-      "We're not a vendor — we're an invested partner. Tone is collaborative, not transactional. We use \"we\" and \"together\" often.",
+      "We're not a vendor - we're an invested partner. Tone is collaborative, not transactional. We use \"we\" and \"together\" often.",
     surface: "mint" as const,
   },
   {
@@ -38,12 +38,12 @@ export const brandTonePillars = [
     emoji: "📈",
     title: "Data-Backed Confidence",
     description:
-      "We back claims with metrics and frameworks — \"15+ years,\" \"qualified leads,\" \"measurable growth.\" Specific beats general every time.",
+      "We back claims with metrics and frameworks - \"15+ years,\" \"qualified leads,\" \"measurable growth.\" Specific beats general every time.",
     surface: "mint" as const,
   },
 ] as const;
 
-/** §07 — Preferred copy patterns */
+/** §07 - Preferred copy patterns */
 export const brandWriteLikeThis = [
   "We'll identify your highest-impact growth channels and build a 90-day roadmap.",
   "Our SEO work has helped clients move from page 3 to page 1 within 90 days.",
@@ -51,7 +51,7 @@ export const brandWriteLikeThis = [
   "Let's replace guesswork with a system built on real data and clear accountability.",
 ] as const;
 
-/** §07 — Copy to avoid */
+/** §07 - Copy to avoid */
 export const brandAvoidThis = [
   "Leveraging our synergistic omnichannel growth paradigm to optimize your KPIs…",
   "We are the number one digital marketing company in the universe!",
@@ -59,47 +59,47 @@ export const brandAvoidThis = [
   "Our proprietary AI-powered solution stack will 10× your ROI overnight.",
 ] as const;
 
-/** §07 — Sitewide voice-aligned copy */
+/** §07 - Sitewide voice-aligned copy */
 export const brandVoice = {
   heroLead:
-    "We'll identify your highest-impact growth channels and build a 90-day roadmap — strategy, SEO, paid media, and automation tailored to how you grow.",
+    "We'll identify your highest-impact growth channels and build a 90-day roadmap - strategy, SEO, paid media, and automation tailored to how you grow.",
   servicesIntro:
-    "End-to-end digital marketing for entrepreneurs, experts, and service businesses — from brand foundation to next-generation AI search visibility.",
+    "End-to-end digital marketing for entrepreneurs, experts, and service businesses - from brand foundation to next-generation AI search visibility.",
   partnerLine:
-    "We're not a vendor — we're an invested partner. We speak in outcomes and business results, not features and tech jargon.",
+    "We're not a vendor - we're an invested partner. We speak in outcomes and business results, not features and tech jargon.",
   ctaDarkTitle: "Ready to build a system that drives qualified leads?",
   ctaDarkDescription:
-    "We'll identify your highest-impact growth channels and build a 90-day roadmap — strategy driven by real data, not guesswork.",
-  /** §09 — Primary on light surfaces; mint + outlineDark on navy blocks */
+    "We'll identify your highest-impact growth channels and build a 90-day roadmap - strategy driven by real data, not guesswork.",
+  /** §09 - Primary on light surfaces; mint + outlineDark on navy blocks */
   ctaPrimary: "Book Strategy Call",
-  /** §09 — Deep mint high-emphasis standalone */
+  /** §09 - Deep mint high-emphasis standalone */
   ctaAudit: "Request Audit",
   ctaServices: "View Services",
   ctaCaseStudies: "See Case Studies",
   ctaConsultation:
-    "Book a free strategy call and we'll map the right approach for your goals, timeline, and budget — with clear accountability, not guesswork.",
+    "Book a free strategy call and we'll map the right approach for your goals, timeline, and budget - with clear accountability, not guesswork.",
 } as const;
 
-/** §05 — Service offering labels for forms & navigation */
+/** §05 - Service offering labels for forms & navigation */
 export const brandServiceOptions = [
   "Brand Strategy",
   "Website Design",
   "SEO Optimization",
   "Meta Ads",
   "Google Ads",
-  "AEO — Answer Engine Optimization",
-  "GEO — Generative Engine Optimization",
+  "AEO - Answer Engine Optimization",
+  "GEO - Generative Engine Optimization",
   "Content Creation",
   "Performance Analytics",
   "Other",
 ] as const;
 
-/** §05 — Marketing growth process (audit → optimization) */
+/** §05 - Marketing growth process (audit → optimization) */
 export const brandProcessSteps = [
   {
     title: "Audit",
     description:
-      "We baseline your channels, funnel, and performance — identifying the highest-impact growth opportunities.",
+      "We baseline your channels, funnel, and performance - identifying the highest-impact growth opportunities.",
     bg: "#1e5a98",
     color: "#1e5a98",
     borderColor: "rgba(30,90,152,0.35)",
@@ -121,7 +121,7 @@ export const brandProcessSteps = [
   {
     title: "Creative",
     description:
-      "Messaging, landing experiences, and ad creative aligned to conversion — not vanity metrics.",
+      "Messaging, landing experiences, and ad creative aligned to conversion - not vanity metrics.",
     bg: "#2d6ab5",
     color: "#2d6ab5",
     borderColor: "rgba(45,106,181,0.35)",
@@ -143,7 +143,7 @@ export const brandProcessSteps = [
   {
     title: "Optimize",
     description:
-      "Weekly performance reviews — we double down on winners and cut waste with real data.",
+      "Weekly performance reviews - we double down on winners and cut waste with real data.",
     bg: "#d1f5ee",
     color: "#1a9e80",
     borderColor: "rgba(209,245,238,0.8)",
@@ -165,7 +165,7 @@ export const brandProcessSteps = [
   {
     title: "Report",
     description:
-      "Executive-ready reporting on leads, revenue, and ROI — clarity for leadership every month.",
+      "Executive-ready reporting on leads, revenue, and ROI - clarity for leadership every month.",
     bg: "#1e5a98",
     color: "#1e5a98",
     borderColor: "rgba(30,90,152,0.35)",

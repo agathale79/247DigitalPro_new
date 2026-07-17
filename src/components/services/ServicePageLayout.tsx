@@ -18,7 +18,7 @@ import { BookStrategyCallButton } from "@/components/ui/BookStrategyCallButton";
 import { getServiceBySlug } from "@/data/service-details";
 import type { ServicePanel } from "@/types/service-detail";
 
-/** Fixed header height — sticky panel area sits below this */
+/** Fixed header height - sticky panel area sits below this */
 const HEADER_OFFSET_PX = 72;
 
 interface ServicePageLayoutProps {
@@ -473,7 +473,7 @@ export function ServicePageLayout({ slug }: ServicePageLayoutProps) {
           }}
         >
           <div className="flex h-full w-full max-w-[100vw]">
-            {/* Sticky service name — desktop sidebar */}
+            {/* Sticky service name - desktop sidebar */}
             <aside
               className="hidden lg:flex shrink-0 flex-col justify-center px-6 xl:px-8 border-r h-full"
               style={{
@@ -552,7 +552,7 @@ export function ServicePageLayout({ slug }: ServicePageLayoutProps) {
                 </nav>
               </div>
 
-              {/* Heading — fixed height, does not grow */}
+              {/* Heading - fixed height, does not grow */}
               <div className="shrink-0 pb-3 sm:pb-4 bg-surface">
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -618,7 +618,7 @@ export function ServicePageLayout({ slug }: ServicePageLayoutProps) {
                 </div>
               </div>
 
-              {/* Horizontal track — fills remaining viewport, clips overflow */}
+              {/* Horizontal track - fills remaining viewport, clips overflow */}
               <div className="relative flex-1 min-h-0 w-full overflow-hidden">
                 <motion.div
                   ref={trackRef}

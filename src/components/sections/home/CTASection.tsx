@@ -3,7 +3,7 @@
 import { brandVoice } from "@/config/brand";
 import { BrandCTA } from "@/components/ui/BrandCTA";
 
-/* Get Started section — commented out for now
+/* Get Started section - commented out for now
 import { motion } from "framer-motion";
 import { ArrowRight, LineChart, Search } from "lucide-react";
 import { Container } from "@/components/layout/Container";

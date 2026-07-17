@@ -94,7 +94,7 @@ function MobileSwiper() {
           What Our Clients Say
         </h2>
         <p className="mt-3 text-sm text-slate max-w-md mx-auto leading-relaxed">
-          Don&rsquo;t just take our word for it — hear from the businesses
+          Don&rsquo;t just take our word for it - hear from the businesses
           we&rsquo;ve helped grow.
         </p>
       </div>
@@ -227,7 +227,7 @@ function DesktopLayout() {
               What Our Clients Say
             </h2>
             <p className="mt-5 text-base text-slate leading-relaxed">
-              Don&rsquo;t just take our word for it — hear from the businesses
+              Don&rsquo;t just take our word for it - hear from the businesses
               we&rsquo;ve helped grow.
             </p>
 
@@ -290,7 +290,7 @@ function DesktopLayout() {
           {/* Center spacer */}
           <div className="flex-1 min-w-[240px]" />
 
-          {/* Right column — offset down for organic stagger */}
+          {/* Right column - offset down for organic stagger */}
           <div className="w-[350px] xl:w-[380px] flex flex-col gap-7 shrink-0 mt-12">
             <AnimatePresence mode="wait">
               {right.map((t, i) => (

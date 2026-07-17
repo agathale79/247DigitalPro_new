@@ -1,6 +1,6 @@
 import type { AeoGeoFeature, ServiceOverviewItem } from "@/types/service";
 
-/** §05 — Our Services Offering (Brand Guidelines v2.0) */
+/** §05 - Our Services Offering (Brand Guidelines v2.0) */
 export const servicesOverview: ServiceOverviewItem[] = [
   {
     title: "Brand Strategy",
@@ -43,7 +43,7 @@ export const servicesOverview: ServiceOverviewItem[] = [
     badge: "CORE",
   },
   {
-    title: "AEO — Answer Engine Optimization",
+    title: "AEO - Answer Engine Optimization",
     description:
       "Structured content strategy to appear in AI-generated answers on ChatGPT, Perplexity, and voice search.",
     icon: "bot",
@@ -51,7 +51,7 @@ export const servicesOverview: ServiceOverviewItem[] = [
     badge: "NEW",
   },
   {
-    title: "GEO — Generative Engine Optimization",
+    title: "GEO - Generative Engine Optimization",
     description:
       "Optimization for AI-powered search engines (Google SGE, Bing Copilot) to ensure brand visibility in AI-generated results.",
     icon: "sparkles",
@@ -69,7 +69,7 @@ export const servicesOverview: ServiceOverviewItem[] = [
   {
     title: "Performance Analytics",
     description:
-      "KPI dashboards, attribution reporting, and continuous optimization — strategy driven by real data, not guesswork.",
+      "KPI dashboards, attribution reporting, and continuous optimization - strategy driven by real data, not guesswork.",
     icon: "trending-up",
     href: "/services/digital-marketing",
     badge: "CORE",
@@ -77,8 +77,8 @@ export const servicesOverview: ServiceOverviewItem[] = [
 ];
 
 export const aeoGeoFeature: AeoGeoFeature = {
-  title: "AEO & GEO — Next-Generation Search Visibility",
+  title: "AEO & GEO - Next-Generation Search Visibility",
   description:
-    "AEO ensures your business appears when AI tools answer your customers' questions. GEO optimizes for AI-generated search results (Google SGE, Bing Copilot). Together, we make sure your brand shows up wherever people search — traditional engines and AI alike.",
+    "AEO ensures your business appears when AI tools answer your customers' questions. GEO optimizes for AI-generated search results (Google SGE, Bing Copilot). Together, we make sure your brand shows up wherever people search - traditional engines and AI alike.",
   href: "/services/seo",
 };

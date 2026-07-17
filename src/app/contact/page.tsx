@@ -153,7 +153,7 @@ export default function ContactPage() {
       <section id="consultation" className="py-16 md:py-24 bg-surface scroll-mt-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
-            {/* Form — takes 3 cols */}
+            {/* Form - takes 3 cols */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -333,7 +333,7 @@ export default function ContactPage() {
               </div>
             </motion.div>
 
-            {/* Sidebar — takes 2 cols */}
+            {/* Sidebar - takes 2 cols */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}

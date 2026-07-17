@@ -31,7 +31,7 @@ export const marketingPortfolioItems: MarketingPortfolioItem[] = [
     website: "https://sea.edu/",
     industry: "Marine Education & Research",
     summary:
-      "Paid social and search campaigns promoting SEA's high school expeditions, undergraduate ocean programs, and summer research at sea — driving program inquiries from students and parents nationwide.",
+      "Paid social and search campaigns promoting SEA's high school expeditions, undergraduate ocean programs, and summer research at sea - driving program inquiries from students and parents nationwide.",
     services: [
       "Meta Ads",
       "Google Search",
@@ -67,7 +67,7 @@ export const marketingPortfolioItems: MarketingPortfolioItem[] = [
     website: "https://www.hyperspheretech.com/",
     industry: "Enterprise Data Security",
     summary:
-      "B2B demand generation for preemptive data protection — positioning SecureStorage™ to security leaders, DevOps teams, and enterprise buyers evaluating S3-compatible encryption without key management.",
+      "B2B demand generation for preemptive data protection - positioning SecureStorage™ to security leaders, DevOps teams, and enterprise buyers evaluating S3-compatible encryption without key management.",
     services: [
       "LinkedIn Ads",
       "Google Search",
@@ -84,7 +84,7 @@ export const marketingPortfolioItems: MarketingPortfolioItem[] = [
       {
         platform: "LinkedIn",
         headline: "Data Breached? Keys Don't Matter.",
-        body: "HyperSphere SecureStorage™ — quantum-resistant encryption with ephemeral keying. Deploy in hours, zero code changes.",
+        body: "HyperSphere SecureStorage™ - quantum-resistant encryption with ephemeral keying. Deploy in hours, zero code changes.",
         cta: "Book a Demo",
       },
       {

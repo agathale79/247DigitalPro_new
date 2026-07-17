@@ -1,4 +1,4 @@
-# Tools audit portal — deployment
+# Tools audit portal - deployment
 
 The marketing site connects to the **Web Scrapping** Express API and Firebase project. No backend code lives in this repo.
 

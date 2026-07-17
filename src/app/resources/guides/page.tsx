@@ -54,7 +54,7 @@ export default function GuidesPage() {
               <span className="text-primary">real results</span>
             </h1>
             <p className="mt-6 text-lead text-slate max-w-xl mx-auto">
-              Practical playbooks for entrepreneurs and small teams — clear
+              Practical playbooks for entrepreneurs and small teams - clear
               actions, no fluff, built to execute this week.
             </p>
           </motion.div>

@@ -19,7 +19,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "The SaaS platform they built for us handles thousands of daily transactions flawlessly. Their team understood our vision and delivered beyond expectations — on time and on budget.",
+      "The SaaS platform they built for us handles thousands of daily transactions flawlessly. Their team understood our vision and delivered beyond expectations - on time and on budget.",
     name: "James Chen",
     role: "CEO",
     company: "TechVenture Inc.",
@@ -28,7 +28,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "From branding to ecommerce development to SEO — they handled everything. Our online revenue tripled in under a year. Truly an end-to-end digital partner.",
+      "From branding to ecommerce development to SEO - they handled everything. Our online revenue tripled in under a year. Truly an end-to-end digital partner.",
     name: "Priya Sharma",
     role: "Founder",
     company: "EcoStyle Boutique",

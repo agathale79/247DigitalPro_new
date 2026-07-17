@@ -112,7 +112,7 @@ function SocialAuditContent() {
       <BrandedPageHero
         overline="Free tool"
         title="Social Media Audit"
-        description="Score Facebook, Instagram, and LinkedIn presence — profile quality, content, engagement, and compliance."
+        description="Score Facebook, Instagram, and LinkedIn presence - profile quality, content, engagement, and compliance."
       />
       <Container className="pb-20">
         <form onSubmit={onSubmit} className="max-w-2xl mx-auto space-y-4 -mt-4">

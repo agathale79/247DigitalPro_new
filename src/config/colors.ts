@@ -1,5 +1,5 @@
 /**
- * §03 Color System — canonical hex values (also in globals.css :root)
+ * §03 Color System - canonical hex values (also in globals.css :root)
  */
 export const brandColors = {
   deepNavy: "#0d1f3c",

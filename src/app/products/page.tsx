@@ -208,7 +208,7 @@ function ProductRow({
         />
       </div>
 
-      {/* Smaller card — offset vertically for stagger */}
+      {/* Smaller card - offset vertically for stagger */}
       {second && (
         <div
           className={firstIsLarge ? "lg:col-span-5 lg:mt-24" : "lg:col-span-7 lg:mt-24"}
@@ -256,7 +256,7 @@ export default function ProductsPage() {
 
   return (
     <main ref={sectionRef} className="relative">
-      {/* Fixed background — stays in place while cards scroll */}
+      {/* Fixed background - stays in place while cards scroll */}
       <div className="fixed inset-0 -z-10 bg-surface">
         <motion.div className="absolute inset-0" style={{ scale: bgScale }}>
           <div
@@ -324,7 +324,7 @@ export default function ProductsPage() {
                 style={{ fontSize: "1.1875rem", color: "var(--text-secondary)" }}
               >
                 A suite of interconnected SaaS products designed to power every
-                aspect of your business — from lead capture to final invoice.
+                aspect of your business - from lead capture to final invoice.
               </motion.p>
 
               <motion.div
@@ -396,7 +396,7 @@ export default function ProductsPage() {
 
       {/* ========== STICKY HEADING + SCROLLABLE CARDS ========== */}
       <section id="products" className="relative lg:grid lg:grid-cols-12 lg:gap-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-32">
-        {/* Sticky heading — pinned on top (mobile) / left (desktop) */}
+        {/* Sticky heading - pinned on top (mobile) / left (desktop) */}
         <div className="lg:col-span-4 xl:col-span-3">
           <div
             className="sticky z-20"
@@ -439,7 +439,7 @@ export default function ProductsPage() {
           </div>
         </div>
 
-        {/* Scrollable cards — alternating left / right rows */}
+        {/* Scrollable cards - alternating left / right rows */}
         <div className="lg:col-span-8 xl:col-span-9 pt-4 lg:pt-0">
           <div className="flex flex-col gap-12 lg:gap-16">
             {rows.map((rowItems, rowIdx) => (

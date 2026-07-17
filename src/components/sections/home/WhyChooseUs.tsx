@@ -31,21 +31,21 @@ const differentiators = [
     icon: Bot,
     title: "AEO & GEO Ready",
     description:
-      "Visible in AI-powered search — not just traditional rankings.",
+      "Visible in AI-powered search - not just traditional rankings.",
     color: "#2d6ab5",
   },
   {
     icon: TrendingUp,
     title: "Data-Backed Confidence",
     description:
-      "Qualified leads and clear accountability — specific beats general.",
+      "Qualified leads and clear accountability - specific beats general.",
     color: "#1e5a98",
   },
   {
     icon: Building2,
     title: "Clear & Jargon-Free",
     description:
-      "Plain language on timelines, channels, and ROI — no buzzwords.",
+      "Plain language on timelines, channels, and ROI - no buzzwords.",
     color: "#1a9e80",
   },
   {
@@ -65,7 +65,7 @@ export function WhyChooseUs() {
     <section className="py-16 md:py-24 bg-linear-to-b from-white via-pale-blue/20 to-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-          {/* Left column — sticky heading */}
+          {/* Left column - sticky heading */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -84,7 +84,7 @@ export function WhyChooseUs() {
             </div>
           </motion.div>
 
-          {/* Right column — staggered bento cards */}
+          {/* Right column - staggered bento cards */}
           <div className="lg:col-span-8">
             {/* Mobile: single column stack */}
             <div className="flex flex-col sm:hidden gap-4">
@@ -102,7 +102,7 @@ export function WhyChooseUs() {
                 ))}
               </div>
 
-              {/* Right sub-column — offset down */}
+              {/* Right sub-column - offset down */}
               <div className="flex flex-col gap-5 pt-10 lg:pt-16">
                 {rightCards.map((item, i) => (
                   <ValueCard key={item.title} item={item} index={i + 3} />

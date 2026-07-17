@@ -86,7 +86,7 @@ function SeoAuditContent() {
       <BrandedPageHero
         overline="Free tool"
         title="Website AI Visibility Audit"
-        description="Scan SEO, AEO, GEO, performance, accessibility, security, and compliance — with a prioritized fix plan."
+        description="Scan SEO, AEO, GEO, performance, accessibility, security, and compliance - with a prioritized fix plan."
       />
       <Container className="pb-20">
         <form

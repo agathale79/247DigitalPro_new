@@ -137,7 +137,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Homepage intro — blocks any flash before React mounts the loader */
+/* Homepage intro - blocks any flash before React mounts the loader */
 #intro-preflight:not([data-active]) {
   display: none;
 }

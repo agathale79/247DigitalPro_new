@@ -20,7 +20,7 @@ export const portfolioProjects: PortfolioProject[] = [
     client: "Atlantic Awning",
     category: "Web Development",
     description:
-      "Website for a New England awning leader since 1888 — custom commercial and residential shade solutions, from retractable awnings and storefront canopies to pergolas and vestibules across Boston and beyond.",
+      "Website for a New England awning leader since 1888 - custom commercial and residential shade solutions, from retractable awnings and storefront canopies to pergolas and vestibules across Boston and beyond.",
     metric: "120+",
     metricLabel: "Years of Heritage",
     tags: ["Web Design", "Local SEO", "Commercial"],
@@ -35,7 +35,7 @@ export const portfolioProjects: PortfolioProject[] = [
     client: "Abacuzz",
     category: "SaaS Platform",
     description:
-      "All-in-one abacus academy management platform — manage organizations, academies, and students from a single dashboard. Run competitions, demos, and tests to scale abacus businesses effortlessly.",
+      "All-in-one abacus academy management platform - manage organizations, academies, and students from a single dashboard. Run competitions, demos, and tests to scale abacus businesses effortlessly.",
     metric: "500+",
     metricLabel: "Academies Powered",
     tags: ["SaaS", "EdTech", "Platform"],
@@ -46,7 +46,7 @@ export const portfolioProjects: PortfolioProject[] = [
   },
 ];
 
-/** @deprecated Use portfolioProjects — kept for homepage showcase compatibility */
+/** @deprecated Use portfolioProjects - kept for homepage showcase compatibility */
 export interface PortfolioItem {
   title: string;
   category: string;

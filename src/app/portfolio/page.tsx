@@ -139,7 +139,7 @@ export default function PortfolioPage() {
               <span className="text-primary">measurable growth</span>
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-lead text-slate">
-              Qualified leads, conversions, and revenue outcomes — strategy backed
+              Qualified leads, conversions, and revenue outcomes - strategy backed
               by real data across entrepreneurs and growth-stage businesses.
             </p>
           </motion.div>

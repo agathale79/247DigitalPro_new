@@ -118,7 +118,7 @@ function ReportsContent() {
       <BrandedPageHero
         overline="Your account"
         title="My Reports"
-        description="Every website and social audit you run is saved here — reopen results or download PDFs."
+        description="Every website and social audit you run is saved here - reopen results or download PDFs."
       />
       <Container className="pb-20">
         <div className="flex flex-col sm:flex-row gap-4 -mt-2 mb-8">

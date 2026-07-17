@@ -24,7 +24,7 @@ const nunitoSans = Nunito_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} — Marketing Systems That Drive Measurable Growth`,
+    default: `${siteConfig.name} - Marketing Systems That Drive Measurable Growth`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,

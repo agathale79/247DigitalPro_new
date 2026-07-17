@@ -252,7 +252,7 @@ Refund Policy
 5. Homepage Architecture
 A. Hero Section
 Headline
-“Digital Growth, AI Automation, SaaS & Technology Solutions — Unified Into One
+“Digital Growth, AI Automation, SaaS & Technology Solutions - Unified Into One
 Powerful Business Ecosystem.”
 
 Subheadline

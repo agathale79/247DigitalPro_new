@@ -158,7 +158,7 @@ function ServiceIcon({
         </div>
       </motion.div>
 
-      {/* Info tooltip — appears on hover */}
+      {/* Info tooltip - appears on hover */}
       <AnimatePresence>
         {isHovered && (
           <motion.div
@@ -281,7 +281,7 @@ export default function ServicesPage() {
       {/* ========== SERVICE ICONS GRID ========== */}
       <section className="relative pt-12 pb-44 sm:pt-16 sm:pb-56">
         <div className="mx-auto px-4 overflow-visible">
-          {/* Single row of 6 icons — tightly packed, slightly rotated */}
+          {/* Single row of 6 icons - tightly packed, slightly rotated */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -382,7 +382,7 @@ export default function ServicesPage() {
 
       <BrandCTA
         title="Not sure where to start?"
-        description="We'll identify your highest-impact growth channels and build a 90-day roadmap — strategy driven by real data, not guesswork."
+        description="We'll identify your highest-impact growth channels and build a 90-day roadmap - strategy driven by real data, not guesswork."
       />
     </main>
   );

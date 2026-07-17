@@ -39,7 +39,7 @@ function ProfileContent() {
     }
   }
 
-  const phone = profile?.phone ?? user?.phoneNumber ?? "—";
+  const phone = profile?.phone ?? user?.phoneNumber ?? "-";
 
   return (
     <RequireAuth>

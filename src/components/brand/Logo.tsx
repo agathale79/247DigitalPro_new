@@ -24,7 +24,7 @@ export interface LogoProps {
 }
 
 /**
- * Brand logo per guidelines §02 — unmodified assets, clear space, no effects.
+ * Brand logo per guidelines §02 - unmodified assets, clear space, no effects.
  */
 export function Logo({
   variant = "light",

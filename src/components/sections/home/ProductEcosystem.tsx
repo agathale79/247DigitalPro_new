@@ -24,7 +24,7 @@ export function ProductEcosystem() {
             Our Product Ecosystem
           </h2>
           <p className="mt-4 text-lead text-slate leading-relaxed">
-            Tools and platforms that support your marketing systems — from lead
+            Tools and platforms that support your marketing systems - from lead
             capture to reporting and optimization.
           </p>
         </div>

@@ -115,7 +115,7 @@ export function SeverityBadge({ issue }: { issue: unknown }) {
 
 export function formatCheckDisplay(value: unknown) {
   if (value === null || value === undefined) {
-    return { icon: "—", className: "text-slate", text: "Unknown" };
+    return { icon: "-", className: "text-slate", text: "Unknown" };
   }
   const str = String(value).toLowerCase();
   if (value === true || str === "pass" || str === "true") {

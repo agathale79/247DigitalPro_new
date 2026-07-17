@@ -215,7 +215,7 @@ function MarketingClientCard({
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-slate">
                   Ad concepting, audience segmentation, campaign setup, and
-                  performance reporting — dummy figures shown until live case
+                  performance reporting - dummy figures shown until live case
                   study data is finalized.
                 </p>
               </div>
@@ -246,7 +246,7 @@ export function MarketingPortfolioSection() {
           <p className="mt-4 text-sm leading-relaxed text-slate sm:text-base">
             Paid campaigns, creatives, and demand generation work for education
             and enterprise brands. Sample ad concepts and placeholder metrics
-            below — full case studies coming soon.
+            below - full case studies coming soon.
           </p>
         </div>
 

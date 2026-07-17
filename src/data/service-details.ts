@@ -50,7 +50,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Overview",
         title: "Marketing that moves the needle",
         subtitle: "Full-funnel growth",
-        body: "We blend paid media, organic search, and content into one cohesive engine — so every touchpoint works toward the same business outcome.",
+        body: "We blend paid media, organic search, and content into one cohesive engine - so every touchpoint works toward the same business outcome.",
         bullets: [
           {
             title: "Audience-first strategy",
@@ -103,7 +103,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Outcomes",
         title: "Results you can report on",
         subtitle: "Clarity for leadership",
-        body: "Every engagement ships with dashboards your team actually uses — pipeline contribution, CAC, LTV, and channel mix at a glance.",
+        body: "Every engagement ships with dashboards your team actually uses - pipeline contribution, CAC, LTV, and channel mix at a glance.",
         list: [
           "Executive-ready monthly reports",
           "Live performance dashboards",
@@ -191,7 +191,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Outcomes",
         title: "Sites that earn their keep",
         subtitle: "Business impact",
-        body: "We measure success in speed, rankings, and conversion — not just launch dates. Every project includes Core Web Vitals optimization and structured data.",
+        body: "We measure success in speed, rankings, and conversion - not just launch dates. Every project includes Core Web Vitals optimization and structured data.",
         list: [
           "Mobile-first responsive layouts",
           "SEO-ready markup & sitemaps",
@@ -207,7 +207,7 @@ export const serviceDetails: ServiceDetail[] = [
     subtitle: "Product Engineering",
     tagline: "From idea to scalable product",
     description:
-      "End-to-end SaaS development — discovery, UX, engineering, and launch — for CRM, ERP, and custom platforms your users will love.",
+      "End-to-end SaaS development - discovery, UX, engineering, and launch - for CRM, ERP, and custom platforms your users will love.",
     href: "/services/saas-solutions",
     icon: Cloud,
     heroImage: getServiceHeroImage("saas-solutions"),
@@ -226,7 +226,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Overview",
         title: "Product teams without the overhead",
         subtitle: "Full-stack SaaS",
-        body: "We act as your extended product squad — validating ideas, designing intuitive flows, and shipping reliable software on a roadmap you control.",
+        body: "We act as your extended product squad - validating ideas, designing intuitive flows, and shipping reliable software on a roadmap you control.",
         bullets: [
           {
             title: "MVP to enterprise",
@@ -295,7 +295,7 @@ export const serviceDetails: ServiceDetail[] = [
     subtitle: "Identity & Creative",
     tagline: "A brand people remember and trust",
     description:
-      "Complete brand identity systems — logo, visual language, tone of voice, and guidelines — that make every touchpoint feel unmistakably yours.",
+      "Complete brand identity systems - logo, visual language, tone of voice, and guidelines - that make every touchpoint feel unmistakably yours.",
     href: "/services/branding",
     icon: Palette,
     heroImage: getServiceHeroImage("branding"),
@@ -314,7 +314,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Overview",
         title: "Identity with intention",
         subtitle: "Strategic creative",
-        body: "Great branding isn't just aesthetics — it's strategy made visible. We craft systems that communicate who you are and why you matter.",
+        body: "Great branding isn't just aesthetics - it's strategy made visible. We craft systems that communicate who you are and why you matter.",
         bullets: [
           {
             title: "Research-led positioning",
@@ -402,7 +402,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Overview",
         title: "Automation with guardrails",
         subtitle: "Practical AI",
-        body: "We focus on high-impact automations — not hype. Chatbots, document processing, and workflow triggers that integrate with tools you already use.",
+        body: "We focus on high-impact automations - not hype. Chatbots, document processing, and workflow triggers that integrate with tools you already use.",
         bullets: [
           {
             title: "Human-in-the-loop",
@@ -455,7 +455,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Outcomes",
         title: "Capacity you can measure",
         subtitle: "Operational lift",
-        body: "Track hours saved, response times, and error rates — so leadership sees automation as an investment, not an experiment.",
+        body: "Track hours saved, response times, and error rates - so leadership sees automation as an investment, not an experiment.",
         list: [
           "Reduced manual data entry",
           "Faster customer response times",
@@ -471,7 +471,7 @@ export const serviceDetails: ServiceDetail[] = [
     subtitle: "Client Management",
     tagline: "Every relationship, one clear view",
     description:
-      "Custom CRM solutions that streamline sales pipelines, client management, and team collaboration — tailored to how your business actually works.",
+      "Custom CRM solutions that streamline sales pipelines, client management, and team collaboration - tailored to how your business actually works.",
     href: "/services/crm-systems",
     icon: Users,
     heroImage: getServiceHeroImage("crm-systems"),
@@ -543,7 +543,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Outcomes",
         title: "Pipeline visibility",
         subtitle: "Revenue clarity",
-        body: "Leadership gets accurate forecasts and activity metrics — while reps spend less time updating spreadsheets and more time closing.",
+        body: "Leadership gets accurate forecasts and activity metrics - while reps spend less time updating spreadsheets and more time closing.",
         list: [
           "Real-time pipeline dashboards",
           "Automated follow-up sequences",
@@ -559,7 +559,7 @@ export const serviceDetails: ServiceDetail[] = [
     subtitle: "Organic Growth",
     tagline: "Rank higher, attract qualified traffic",
     description:
-      "Technical SEO, on-page strategy, and authority content that improves rankings and drives sustainable organic traffic — plus AEO and GEO for AI-powered search.",
+      "Technical SEO, on-page strategy, and authority content that improves rankings and drives sustainable organic traffic - plus AEO and GEO for AI-powered search.",
     href: "/services/seo",
     icon: Search,
     heroImage: getServiceHeroImage("seo"),
@@ -578,7 +578,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Overview",
         title: "Search visibility that compounds",
         subtitle: "Technical + content SEO",
-        body: "We fix what holds you back technically, strengthen on-page relevance, and publish authority content so Google — and AI answer engines — surface your brand when buyers are looking.",
+        body: "We fix what holds you back technically, strengthen on-page relevance, and publish authority content so Google - and AI answer engines - surface your brand when buyers are looking.",
         bullets: [
           {
             title: "Full-site technical audits",
@@ -602,8 +602,8 @@ export const serviceDetails: ServiceDetail[] = [
           "Keyword research & content strategy",
           "On-page optimization & internal linking",
           "Link building & digital PR",
-          "AEO — Answer Engine Optimization",
-          "GEO — Generative Engine Optimization",
+          "AEO - Answer Engine Optimization",
+          "GEO - Generative Engine Optimization",
           "Monthly ranking & traffic reporting",
         ],
       },
@@ -616,7 +616,7 @@ export const serviceDetails: ServiceDetail[] = [
           {
             title: "Baseline & roadmap",
             description:
-              "Audit your site, competitors, and search landscape — then build a 90-day plan.",
+              "Audit your site, competitors, and search landscape - then build a 90-day plan.",
           },
           {
             title: "Implement & publish",
@@ -626,7 +626,7 @@ export const serviceDetails: ServiceDetail[] = [
           {
             title: "Measure & refine",
             description:
-              "Track rankings, traffic, and conversions — double down on what moves qualified leads.",
+              "Track rankings, traffic, and conversions - double down on what moves qualified leads.",
           },
         ],
       },
@@ -670,7 +670,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Overview",
         title: "Paid social that pays back",
         subtitle: "Meta-first growth",
-        body: "We build and manage Meta ad campaigns that put your offer in front of the right people — then optimize creative, audiences, and budgets weekly so spend drives measurable leads.",
+        body: "We build and manage Meta ad campaigns that put your offer in front of the right people - then optimize creative, audiences, and budgets weekly so spend drives measurable leads.",
         bullets: [
           {
             title: "Audience precision",
@@ -680,7 +680,7 @@ export const serviceDetails: ServiceDetail[] = [
           {
             title: "Creative that converts",
             description:
-              "Ad copy and visuals tested systematically — not one-and-done launches.",
+              "Ad copy and visuals tested systematically - not one-and-done launches.",
           },
         ],
       },
@@ -726,7 +726,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Outcomes",
         title: "Leads from social",
         subtitle: "Measurable pipeline",
-        body: "Clients see more qualified form fills and booked calls — with full attribution from first click to closed deal when CRM is connected.",
+        body: "Clients see more qualified form fills and booked calls - with full attribution from first click to closed deal when CRM is connected.",
         list: [
           "Lower cost per qualified lead over time",
           "Creative library your team can reuse organically",
@@ -760,7 +760,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Overview",
         title: "Content with a job to do",
         subtitle: "Strategy-led production",
-        body: "Every article, post, and asset supports a business goal — awareness, authority, or conversion. We plan topics from search and buyer intent, then produce on a calendar your team can rely on.",
+        body: "Every article, post, and asset supports a business goal - awareness, authority, or conversion. We plan topics from search and buyer intent, then produce on a calendar your team can rely on.",
         bullets: [
           {
             title: "Editorial planning",
@@ -770,7 +770,7 @@ export const serviceDetails: ServiceDetail[] = [
           {
             title: "On-brand execution",
             description:
-              "Copy and visuals aligned to your voice — expert but approachable, outcome-focused.",
+              "Copy and visuals aligned to your voice - expert but approachable, outcome-focused.",
           },
         ],
       },
@@ -816,7 +816,7 @@ export const serviceDetails: ServiceDetail[] = [
         navLabel: "Outcomes",
         title: "Authority that converts",
         subtitle: "Long-term asset",
-        body: "Strong content compounds — rankings improve, sales cycles shorten, and prospects arrive already educated on your value.",
+        body: "Strong content compounds - rankings improve, sales cycles shorten, and prospects arrive already educated on your value.",
         list: [
           "Growing organic traffic from published articles",
           "Consistent social presence without internal burnout",
