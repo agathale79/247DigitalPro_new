@@ -24,6 +24,77 @@ export interface BlogPost extends BlogPostPreview {
 
 export const blogPosts: BlogPost[] = [
   {
+    title:
+      "Job Costing Software for Contractors: Inside the Production Board We Built to Kill Spreadsheet Chaos",
+    excerpt:
+      "Spreadsheets losing you money on every job? See how our custom Production Board gives contractors real-time job costing, scheduling, and P&L tracking.",
+    category: "Technology",
+    date: "2026-08-06",
+    slug: "production-board-job-costing-software-contractors",
+    readTime: "6 min read",
+    gradient: BLOG_CARD_GRADIENT,
+    image: "/images/Automation-systems.gif",
+    author: "247 Digital Pro Team",
+    content: [
+      {
+        paragraphs: [
+          "Most contractors run their business on some version of the same setup: a spreadsheet for active jobs, a whiteboard for scheduling, a separate note for labor hours, and a gut feeling about which jobs actually made money. It works, until a job slips through the cracks, a margin gets missed, or the person who \"knows where everything is\" goes on vacation.",
+          "That was the exact problem one of our fabrication and installation clients brought to us. They needed one place to track every job from first measurement to final invoice, without hiring a developer or learning enterprise software built for companies ten times their size. So we built them a Production Board: a custom job management system that replaces the spreadsheet stack with a single, live view of the business.",
+          "We recently walked through the tool in a full product demo video, and we're breaking down exactly what it does below, because most small and mid-size contractors are dealing with the same operational headache.",
+        ],
+      },
+      {
+        heading: "A Live View of Every Active Job",
+        paragraphs: [
+          "The active jobs dashboard shows every job currently in motion. Click into any job and you get the complete picture in one place: customer details, job type, current stage, and cost data, instead of hunting across five tabs to piece it together.",
+        ],
+      },
+      {
+        heading: "Filter by Stage, Type, or Supplier in One Click",
+        paragraphs: [
+          "Need to know every job waiting on measurements? Filter by \"Measure.\" Want to see what's in design? One click. The board also filters by job type and supplier, and lets you sort orders from highest to lowest value, so managers can spot bottlenecks and prioritize without scrolling through a master list.",
+        ],
+      },
+      {
+        heading: "Automatic Profit and Loss, Per Job",
+        paragraphs: [
+          "This is the feature that usually gets the biggest reaction from contractors: enter material cost and labor cost for a job, and the board calculates profit and loss automatically. No formulas to maintain, no separate accounting spreadsheet to reconcile at month-end.",
+        ],
+      },
+      {
+        heading: "A Visual Schedule Grid That Tracks Real Production Stages",
+        paragraphs: [
+          "Every job moves through its own sequence of stages, and the schedule grid tracks that progress with simple tabs. Finished the fabric stitching stage? Mark it done and the board instantly shows what's complete and what's next. It turns \"where's this job at?\" from a phone call into a five-second glance.",
+        ],
+      },
+      {
+        heading: "Fast Job Creation",
+        paragraphs: [
+          "Adding a new job takes seconds: job number, customer name, job type, and the stages that job requires. No templates to configure, no IT ticket.",
+        ],
+      },
+      {
+        heading: "A Completed Jobs Dashboard for the Numbers That Matter",
+        paragraphs: [
+          "Once a job is finished, it moves into the completed jobs section, where owners can see total jobs completed, total profit, average margin, and total losses at a glance. It's the business-health snapshot most contractors currently have to build by hand once a quarter, available instantly instead.",
+        ],
+      },
+      {
+        heading: "Team Access and Labor Rates Built In",
+        paragraphs: [
+          "Admins control what each team member can see and do, and manage hourly and overtime rates directly in the system. Those rates feed straight into the labor cost calculation for every job, so the P&L numbers stay accurate without manual re-entry.",
+        ],
+      },
+      {
+        heading: "Why This Matters Beyond One Client",
+        paragraphs: [
+          "This project is a good example of what \"marketing systems that drive measurable growth\" actually looks like in practice at 247 Digital Pro. It's not just campaigns and content, it's building the operational tools that let a contractor see their margins clearly enough to make better pricing and hiring decisions. A business that knows exactly which jobs are profitable can market toward more of those jobs and away from the ones quietly losing money.",
+          "If your team is still managing jobs, costs, and scheduling across three or four disconnected spreadsheets, that's usually a sign you've outgrown them, not that you need a bigger spreadsheet.",
+        ],
+      },
+    ],
+  },
+  {
     title: "How AI Is Revolutionizing Digital Marketing in 2026",
     excerpt:
       "Explore how artificial intelligence is reshaping campaign strategies, audience targeting, and content creation for modern businesses.",
