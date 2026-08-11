@@ -61,40 +61,4 @@ export const marketingPortfolioItems: MarketingPortfolioItem[] = [
     accent: "#0c4a6e",
     accentSoft: "#e0f2fe",
   },
-  {
-    id: "hypersphere-tech",
-    client: "HyperSphere Technologies",
-    website: "https://www.hyperspheretech.com/",
-    industry: "Enterprise Data Security",
-    summary:
-      "B2B demand generation for preemptive data protection - positioning SecureStorage™ to security leaders, DevOps teams, and enterprise buyers evaluating S3-compatible encryption without key management.",
-    services: [
-      "LinkedIn Ads",
-      "Google Search",
-      "ABM Creative",
-      "Landing Pages",
-    ],
-    channels: ["LinkedIn", "Google", "Display"],
-    metrics: [
-      { value: "3.1×", label: "Demo request lift" },
-      { value: "41%", label: "Qualified lead rate" },
-      { value: "8.5K+", label: "Decision-maker reach" },
-    ],
-    adPreviews: [
-      {
-        platform: "LinkedIn",
-        headline: "Data Breached? Keys Don't Matter.",
-        body: "HyperSphere SecureStorage™ - quantum-resistant encryption with ephemeral keying. Deploy in hours, zero code changes.",
-        cta: "Book a Demo",
-      },
-      {
-        platform: "Google",
-        headline: "S3 Encryption Without Key Management",
-        body: "Preemptive data security for cloud, on-prem & edge. NSA/NIST validated. Available on AWS Marketplace.",
-        cta: "See How It Works",
-      },
-    ],
-    accent: "#1e3a5f",
-    accentSoft: "#dbeafe",
-  },
 ];
