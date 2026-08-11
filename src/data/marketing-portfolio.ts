@@ -13,6 +13,7 @@ export interface MarketingMetric {
 export interface MarketingPortfolioItem {
   id: string;
   client: string;
+  byline?: string;
   website: string;
   industry: string;
   summary: string;
@@ -28,6 +29,7 @@ export const marketingPortfolioItems: MarketingPortfolioItem[] = [
   {
     id: "sea-edu",
     client: "Sea Education Association",
+    byline: "Work done for Boston Impressions",
     website: "https://sea.edu/",
     industry: "Marine Education & Research",
     summary:
