@@ -116,6 +116,11 @@ function MarketingClientCard({
               <h3 className="mt-1 font-heading text-xl font-bold text-ink sm:text-2xl break-words">
                 {item.client}
               </h3>
+              {item.byline && (
+                <p className="mt-0.5 text-xs font-medium italic text-slate/80">
+                  {item.byline}
+                </p>
+              )}
               <p className="mt-1 text-sm text-slate">{item.industry}</p>
               <a
                 href={item.website}
