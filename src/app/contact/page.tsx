@@ -75,6 +75,8 @@ export default function ContactPage() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -82,9 +84,46 @@ export default function ContactPage() {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    if (submitting) return;
+    setSubmitting(true);
+    setError(null);
+
+    try {
+      const res = await fetch(
+        `https://formsubmit.co/ajax/${siteConfig.email}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            _subject: `New contact form enquiry from ${formData.name}`,
+            _template: "table",
+            Name: formData.name,
+            Email: formData.email,
+            Phone: formData.phone,
+            Company: formData.company,
+            Service: formData.service,
+            Budget: formData.budget,
+            Message: formData.message,
+            Source: "Contact page form",
+          }),
+        }
+      );
+
+      if (!res.ok) throw new Error(`Request failed (${res.status})`);
+
+      setSubmitted(true);
+    } catch {
+      setError(
+        "Something went wrong sending your message. Please try again or email us directly."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -318,6 +357,12 @@ export default function ContactPage() {
                       />
                     </div>
 
+                    {error && (
+                      <p className="text-sm text-red-600" role="alert">
+                        {error}
+                      </p>
+                    )}
+
                     {/* Submit */}
                     <Button
                       type="submit"
@@ -325,8 +370,9 @@ export default function ContactPage() {
                       size="lg"
                       className="w-full sm:w-auto"
                       icon={<Send className="w-4 h-4" />}
+                      disabled={submitting}
                     >
-                      Send Message
+                      {submitting ? "Sending..." : "Send Message"}
                     </Button>
                   </form>
                 )}
