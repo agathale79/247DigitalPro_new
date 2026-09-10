@@ -54,6 +54,18 @@ export default function RootLayout({
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: introBlockScript }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q7YT6PCNCN"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Q7YT6PCNCN');
+          `}
+        </Script>
         <AppProviders>
           <Header />
           <main className="flex-1">{children}</main>
