@@ -172,17 +172,6 @@ export function Footer() {
             ))}
           </div>
         </div>
-
-        <div className="pb-5 text-center">
-          <a
-            href="https://www.swarajyadigital.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-medium text-on-dark/40 hover:text-on-dark/70 transition-colors"
-          >
-            @Developed by Swarajya Digital
-          </a>
-        </div>
       </Container>
     </footer>
   );

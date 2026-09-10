@@ -10,7 +10,10 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import { X, CheckCircle2 } from "lucide-react";
 import { brandVoice } from "@/config/brand";
+import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/Button";
+
+const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${siteConfig.email}`;
 
 interface StrategyCallOptions {
   overline?: string;
@@ -64,25 +67,66 @@ export function StrategyCallProvider({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({ name: "", email: "", phone: "" });
   const [popupContent, setPopupContent] = useState<PopupContent>(defaultPopupContent);
 
   const openStrategyCall = useCallback((options?: StrategyCallOptions) => {
     setPopupContent({ ...defaultPopupContent, ...options });
     setSubmitted(false);
+    setError(null);
     setIsOpen(true);
   }, []);
 
   const closeStrategyCall = useCallback(() => {
     setIsOpen(false);
     setSubmitted(false);
+    setSubmitting(false);
+    setError(null);
     setForm({ name: "", email: "", phone: "" });
     setPopupContent(defaultPopupContent);
   }, []);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    if (submitting) return;
+    setSubmitting(true);
+    setError(null);
+
+    try {
+      const res = await fetch(FORMSUBMIT_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `${popupContent.title} request from ${form.name}`,
+          _template: "table",
+          Name: form.name,
+          Email: form.email,
+          "Contact Number": form.phone,
+          ...(popupContent.selectedProduct
+            ? { "Selected Product": popupContent.selectedProduct }
+            : {}),
+          ...(popupContent.selectedProject
+            ? { "Selected Project": popupContent.selectedProject }
+            : {}),
+          Source: popupContent.title,
+        }),
+      });
+
+      if (!res.ok) throw new Error(`Request failed (${res.status})`);
+
+      setSubmitted(true);
+    } catch {
+      setError(
+        "Something went wrong sending your request. Please try again or email us directly.",
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -244,13 +288,19 @@ export function StrategyCallProvider({
                         className={inputClass}
                       />
                     </div>
+                    {error && (
+                      <p className="text-xs text-red-600" role="alert">
+                        {error}
+                      </p>
+                    )}
                     <Button
                       type="submit"
                       variant="primary"
                       size="md"
                       className="w-full mt-1"
+                      disabled={submitting}
                     >
-                      {popupContent.submitLabel}
+                      {submitting ? "Sending..." : popupContent.submitLabel}
                     </Button>
                   </form>
                 )}
