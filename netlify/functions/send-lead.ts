@@ -104,6 +104,18 @@ export const handler: Handler = async (event: HandlerEvent) => {
   });
 
   try {
+    console.log("SMTP configuration check", {
+    host: SMTP_HOST,
+    port: SMTP_PORT,
+    user: SMTP_USER,
+    passwordPresent: Boolean(SMTP_PASS),
+    passwordLength: SMTP_PASS.length,
+    hasLeadingOrTrailingSpaces: SMTP_PASS !== SMTP_PASS.trim(),
+  });
+
+  await transporter.verify();
+  console.log("SMTP connection and authentication verified");
+    
     await transporter.sendMail({
       from: `"247 Digital Pro Website" <${SMTP_USER}>`,
       to: SMTP_TO || SMTP_USER,
