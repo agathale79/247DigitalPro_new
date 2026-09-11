@@ -91,17 +91,12 @@ export default function ContactPage() {
     setError(null);
 
     try {
-      const res = await fetch(
-        `https://formsubmit.co/ajax/${siteConfig.email}`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            _subject: `New contact form enquiry from ${formData.name}`,
-            _template: "table",
+      const res = await fetch("/.netlify/functions/send-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          subject: `New contact form enquiry from ${formData.name}`,
+          fields: {
             Name: formData.name,
             Email: formData.email,
             Phone: formData.phone,
@@ -110,9 +105,9 @@ export default function ContactPage() {
             Budget: formData.budget,
             Message: formData.message,
             Source: "Contact page form",
-          }),
-        }
-      );
+          },
+        }),
+      });
 
       if (!res.ok) throw new Error(`Request failed (${res.status})`);
 
