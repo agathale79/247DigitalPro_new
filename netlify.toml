@@ -1,0 +1,8 @@
+# Only declaring the Functions directory here — deliberately NOT touching
+# [build] (command/publish) or [[redirects]], since those are presumably
+# already configured correctly in the Netlify site dashboard and this file
+# would take precedence over them once it exists in the repo.
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
