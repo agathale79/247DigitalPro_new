@@ -10,10 +10,9 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import { X, CheckCircle2 } from "lucide-react";
 import { brandVoice } from "@/config/brand";
-import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/Button";
 
-const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${siteConfig.email}`;
+const SEND_LEAD_ENDPOINT = "/.netlify/functions/send-lead";
 
 interface StrategyCallOptions {
   overline?: string;
@@ -95,25 +94,23 @@ export function StrategyCallProvider({
     setError(null);
 
     try {
-      const res = await fetch(FORMSUBMIT_ENDPOINT, {
+      const res = await fetch(SEND_LEAD_ENDPOINT, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          _subject: `${popupContent.title} request from ${form.name}`,
-          _template: "table",
-          Name: form.name,
-          Email: form.email,
-          "Contact Number": form.phone,
-          ...(popupContent.selectedProduct
-            ? { "Selected Product": popupContent.selectedProduct }
-            : {}),
-          ...(popupContent.selectedProject
-            ? { "Selected Project": popupContent.selectedProject }
-            : {}),
-          Source: popupContent.title,
+          subject: `${popupContent.title} request from ${form.name}`,
+          fields: {
+            Name: form.name,
+            Email: form.email,
+            "Contact Number": form.phone,
+            ...(popupContent.selectedProduct
+              ? { "Selected Product": popupContent.selectedProduct }
+              : {}),
+            ...(popupContent.selectedProject
+              ? { "Selected Project": popupContent.selectedProject }
+              : {}),
+            Source: popupContent.title,
+          },
         }),
       });
 
