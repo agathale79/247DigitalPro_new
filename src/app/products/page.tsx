@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/Button";
 import { useStrategyCall } from "@/components/layout/StrategyCallPopup";
 import { brandVoice } from "@/config/brand";
 import { products, type ProductItem } from "@/data/products";
+import { JobFlowSpotlight } from "@/components/sections/products/jobflow/JobFlowSpotlight";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   users: Users,
@@ -392,6 +393,11 @@ export default function ProductsPage() {
             </motion.div>
           </div>
         </div>
+      </section>
+
+      {/* ========== FEATURED: JOBFLOW ========== */}
+      <section className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16">
+        <JobFlowSpotlight />
       </section>
 
       {/* ========== STICKY HEADING + SCROLLABLE CARDS ========== */}
