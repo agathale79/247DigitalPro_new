@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/cn";
-import { isNavItemActive } from "@/lib/nav";
+import { isNavChildActive, isNavItemActive } from "@/lib/nav";
 import { brandVoice } from "@/config/brand";
 import { mainNavItems } from "@/config/navigation";
 import { Button } from "@/components/ui/Button";
@@ -89,8 +89,9 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                         <button
                           onClick={() => toggleDropdown(item.label)}
                           className={cn(
-                            "flex items-center justify-between w-full",
-                            mobileNavLinkClass(parentActive)
+                            mobileNavLinkClass(parentActive),
+                            // after the link styles so cn() keeps flex over their `block`
+                            "flex items-center justify-between w-full"
                           )}
                         >
                           {item.label}
@@ -113,10 +114,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                             >
                               <div className="bg-surface/50 py-1">
                                 {item.children.map((child) => {
-                                  const childActive = isNavItemActive(
-                                    pathname,
-                                    child.href
-                                  );
+                                  const childActive = isNavChildActive(pathname, child);
                                   return (
                                     <Link
                                       key={child.href}
