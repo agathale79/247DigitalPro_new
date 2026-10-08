@@ -124,8 +124,7 @@ export const heroStages = [
 export const integrations = [
   { name: "Zapier", detail: "Brings leads in from any source" },
   { name: "Google Calendar", detail: "Site visits and reschedules" },
-  { name: "CompanyCam", detail: "Photo projects created on approval" },
-  { name: "ShopVox", detail: "Sales records created on approval" },
+  { name: "Third-party CRMs", detail: "Records created automatically on approval" },
   { name: "Email", detail: "Automatic follow-up emails" },
 ];
 
