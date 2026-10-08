@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useState } from "react";
 import { Container } from "@/components/layout/Container";
 import { BrandedPageHero } from "@/components/layout/BrandedPageHero";
 import { Button } from "@/components/ui/Button";
@@ -14,11 +14,14 @@ function ProfileContent() {
   const [company, setCompany] = useState("");
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState("");
+  const [syncedProfile, setSyncedProfile] = useState<typeof profile | undefined>(undefined);
 
-  useEffect(() => {
+  // Reset the form fields whenever a new profile arrives.
+  if (profile !== syncedProfile) {
+    setSyncedProfile(profile);
     setDisplayName(profile?.displayName ?? "");
     setCompany(profile?.company ?? "");
-  }, [profile]);
+  }
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();

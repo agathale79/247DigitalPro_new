@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { useRef, useState, useEffect, useLayoutEffect } from "react";
+import { useRef, useState, useLayoutEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -205,20 +205,18 @@ function useMeasuredHorizontalScroll(
 ) {
   const [maxScrollPx, setMaxScrollPx] = useState(0);
 
-  const measure = () => {
-    const track = trackRef.current;
-    const viewport = track?.parentElement;
-    if (!track || !viewport) return;
-
-    const scrollWidth = track.scrollWidth;
-    const visibleWidth = viewport.clientWidth;
-    setMaxScrollPx(Math.max(0, scrollWidth - visibleWidth));
-  };
-
   useLayoutEffect(() => {
     if (!enabled) return;
 
-    const runMeasure = () => measure();
+    const runMeasure = () => {
+      const track = trackRef.current;
+      const viewport = track?.parentElement;
+      if (!track || !viewport) return;
+
+      const scrollWidth = track.scrollWidth;
+      const visibleWidth = viewport.clientWidth;
+      setMaxScrollPx(Math.max(0, scrollWidth - visibleWidth));
+    };
     runMeasure();
 
     const rafId = requestAnimationFrame(() => {
@@ -240,7 +238,7 @@ function useMeasuredHorizontalScroll(
       ro.disconnect();
       window.removeEventListener("resize", runMeasure);
     };
-  }, [enabled, panelCount]);
+  }, [enabled, panelCount, trackRef]);
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,

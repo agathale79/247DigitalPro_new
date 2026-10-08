@@ -1,6 +1,5 @@
 ﻿"use client";
 
-import Link from "next/link";
 import { FileText, Globe, LogIn, Share2 } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { BrandedPageHero } from "@/components/layout/BrandedPageHero";
