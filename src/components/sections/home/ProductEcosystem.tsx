@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { brandColors } from "@/config/colors";
 import { products, type ProductItem } from "@/data/products";
+import { JobFlowSpotlight } from "@/components/sections/products/jobflow/JobFlowSpotlight";
 
 const numberColors = [
   brandColors.skyBlue,
@@ -33,6 +34,7 @@ export function ProductEcosystem() {
             <ProductItemBlock key={product.title} product={product} index={i} />
           ))}
         </div>
+        <JobFlowSpotlight className="mt-14 sm:mt-16" />
       </Container>
     </section>
   );
