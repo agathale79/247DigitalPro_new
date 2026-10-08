@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/cn";
-import { isNavItemActive } from "@/lib/nav";
+import { isNavChildActive, isNavItemActive } from "@/lib/nav";
 import { mainNavItems } from "@/config/navigation";
 import type { NavItem } from "@/types/navigation";
 
@@ -67,7 +67,7 @@ function NavLink({ item, pathname }: { item: NavItem; pathname: string }) {
       <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none group-hover:pointer-events-auto">
         <div className="bg-white rounded-xl shadow-lg border border-border-light py-2 min-w-[220px]">
           {item.children.map((child) => {
-            const childActive = isNavItemActive(pathname, child.href);
+            const childActive = isNavChildActive(pathname, child);
             return (
               <Link
                 key={child.href}
