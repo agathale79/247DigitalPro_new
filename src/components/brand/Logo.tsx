@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/cn";
@@ -38,10 +38,12 @@ export function Logo({
   const resolvedVariant = layout === "icon" ? "icon" : variant;
   const initialSrc = getLogoAsset(resolvedVariant, layout);
   const [src, setSrc] = useState(initialSrc);
+  const [prevInitialSrc, setPrevInitialSrc] = useState(initialSrc);
 
-  useEffect(() => {
+  if (initialSrc !== prevInitialSrc) {
+    setPrevInitialSrc(initialSrc);
     setSrc(initialSrc);
-  }, [initialSrc]);
+  }
 
   const isLockup = layout === "lockup" && resolvedVariant !== "icon";
   const width = isLockup ? dimensions.lockupWidth : dimensions.icon;

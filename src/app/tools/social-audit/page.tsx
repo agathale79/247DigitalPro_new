@@ -34,6 +34,8 @@ function SocialAuditContent() {
       if (!raw) return;
       sessionStorage.removeItem("audit:socialReport");
       const parsed = JSON.parse(raw);
+      // sessionStorage is browser-only, so this has to run after hydration.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setResult(parsed);
       if (parsed.audit?.brand) setBrand(String(parsed.audit.brand));
       setTimeout(() => {

@@ -2,7 +2,6 @@ import {
   HeroSection,
   TrustMetricsSection,
   ServicesOverview,
-  IndustrySolutions,
   WhyChooseUs,
   ProductEcosystem,
   WorkflowProcess,

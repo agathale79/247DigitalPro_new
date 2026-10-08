@@ -93,8 +93,8 @@ export function HeroSection() {
 }
 
 function HeroVisual() {
-  const revenue = useCountUp(124, 2000, 400);
-  const leads = useCountUp(2847, 2200, 600);
+  const { ref: revenueRef, count: revenueCount } = useCountUp(124, 2000, 400);
+  const { ref: leadsRef, count: leadsCount } = useCountUp(2847, 2200, 600);
 
   return (
     <div className="relative w-full lg:scale-[1.03] lg:origin-center">
@@ -120,7 +120,7 @@ function HeroVisual() {
                 <span className="text-xs text-deep-mint font-semibold">+47%</span>
               </div>
               <p className="font-metric text-xl sm:text-2xl text-ink">
-                <span ref={revenue.ref}>${revenue.count}K</span>
+                <span ref={revenueRef}>${revenueCount}K</span>
               </p>
               <p className="text-xs text-slate mt-0.5">Revenue Growth</p>
             </div>
@@ -130,7 +130,7 @@ function HeroVisual() {
                 <span className="text-xs text-primary font-semibold">+32%</span>
               </div>
               <p className="font-metric text-xl sm:text-2xl text-ink">
-                <span ref={leads.ref}>{leads.count.toLocaleString()}</span>
+                <span ref={leadsRef}>{leadsCount.toLocaleString()}</span>
               </p>
               <p className="text-xs text-slate mt-0.5">Leads This Month</p>
             </div>

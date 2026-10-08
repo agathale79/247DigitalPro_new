@@ -59,10 +59,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const auth = getFirebaseAuth();
     const initErr = getFirebaseInitError();
     if (!auth) {
+      // Firebase only initializes in the browser, so this can't be known during render.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setFirebaseError(initErr ?? "Firebase Auth not initialized");
-      setUser(null);
-      setIdToken(null);
-      setProfile(null);
       setLoading(false);
       return;
     }

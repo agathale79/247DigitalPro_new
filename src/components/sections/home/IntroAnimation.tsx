@@ -82,6 +82,8 @@ export function IntroAnimation({ children }: { children: React.ReactNode }) {
   const [portalReady, setPortalReady] = useState(false);
 
   useLayoutEffect(() => {
+    // Runs before first paint on the client so the intro shows without a flash.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setPortalReady(true);
 
     if (introSessionStarted) return;

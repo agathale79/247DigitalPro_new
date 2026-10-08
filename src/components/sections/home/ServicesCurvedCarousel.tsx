@@ -233,6 +233,7 @@ export function ServicesCurvedCarousel({ services }: ServicesCurvedCarouselProps
   const returnFadeStartRef = useRef<Map<number, number>>(new Map());
   const animTimerRef = useRef<number | null>(null);
   const rafRef = useRef<number>(0);
+  const tickRef = useRef<() => void>(() => {});
   const pausedRef = useRef(false);
 
   const [layout, setLayout] = useState<CarouselLayout>(SSR_LAYOUT);
@@ -379,7 +380,7 @@ export function ServicesCurvedCarousel({ services }: ServicesCurvedCarouselProps
     const width = widthRef.current;
     const currentLayout = layoutRef.current;
     if (width <= 0) {
-      rafRef.current = requestAnimationFrame(tick);
+      rafRef.current = requestAnimationFrame(() => tickRef.current());
       return;
     }
 
@@ -411,7 +412,7 @@ export function ServicesCurvedCarousel({ services }: ServicesCurvedCarouselProps
         hiddenRailIndexRef.current !== null &&
         slot.serviceIndex === hiddenRailIndexRef.current;
 
-      let targetOpacity =
+      const targetOpacity =
         !placed || hideOnRail
           ? 0
           : railOpacity(
@@ -471,8 +472,12 @@ export function ServicesCurvedCarousel({ services }: ServicesCurvedCarouselProps
     }
     prevPositionsRef.current = nextPrev;
 
-    rafRef.current = requestAnimationFrame(tick);
+    rafRef.current = requestAnimationFrame(() => tickRef.current());
   }, [findCenterCandidate, onIconReachCenter, services.length, slots]);
+
+  useLayoutEffect(() => {
+    tickRef.current = tick;
+  }, [tick]);
 
   useEffect(() => {
     if (!dropAnim || dropAnim.landed) return;
