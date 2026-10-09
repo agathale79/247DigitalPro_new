@@ -16,21 +16,24 @@ npm run lint        # ESLint (flat config, next core-web-vitals + typescript)
 npx tsc --noEmit    # type-check only
 ```
 
-There is no test suite. Verify changes with `npm run build`, since a static export fails on anything that needs a server at runtime. `next build` does not run ESLint, so run `npm run lint` separately. Lint already had pre-existing errors (mostly `react-hooks/set-state-in-effect`) when this file was written, so judge only the files you touched.
+There is no test suite. Verify changes with `npm run build`, since a static export fails on anything that needs a server at runtime. `next build` does not run ESLint, so run `npm run lint` separately. Lint is clean on `main`; keep it that way. For UI changes, also look at the page in a browser at desktop and phone widths.
 
 ## Deployment / CI
 
-- No GitHub Actions. Netlify builds from `main` on push; its build command and publish dir live in the **Netlify dashboard**. `netlify.toml` declares only `[functions]` and deliberately leaves out `[build]` and `[[redirects]]`, because adding those would override the dashboard settings.
-- Commit history so far is mostly GitHub web uploads ("Add files via upload"). Prefer branches and PRs.
+- **Merging to `main` deploys to production.** Netlify builds `main` on every push; its build command and publish dir live in the **Netlify dashboard**. `netlify.toml` declares only `[functions]` and deliberately leaves out `[build]` and `[[redirects]]`, because adding those would override the dashboard settings.
+- **Every PR gets a Netlify deploy preview** at `https://deploy-preview-<PR#>--roaring-genie-fd0bfe.netlify.app`, posted as a comment on the PR. Use it for review before merging.
+- **GitHub Actions** (`.github/workflows/ci.yml`) runs lint, type-check and build on every PR and on pushes to `main`.
+- To roll back, revert the merge commit on `main` (`git revert <sha>`) and open a PR, or republish an earlier deploy from the Netlify dashboard.
+- `sitemap.xml` and `robots.txt` are generated at build time by `src/app/sitemap.ts` and `src/app/robots.ts`. The sitemap discovers routes from `src/app` automatically and excludes `/tools`.
 - `public/.htaccess` is Apache config left over from a cPanel-style host. Netlify ignores it.
-- `public/sitemap.xml` and `public/robots.txt` are currently **empty files**.
 
 ## Architecture
 
 **Static export constraints** (`next.config.ts`: `output: "export"`, `trailingSlash: true`, `images.unoptimized`):
 - No API routes, server actions, middleware, ISR, or runtime `next/image` optimization.
 - Dynamic routes (`portfolio/[slug]`, `resources/blog/[slug]`) must export `generateStaticParams()` from the matching `src/data/*` helpers.
-- Internal links resolve with trailing slashes (`/tools/login/`).
+- Internal links resolve with trailing slashes (`/tools/login/`), and `usePathname()` returns paths with a trailing slash.
+- `robots.ts`/`sitemap.ts` need `export const dynamic = "force-static"` under static export.
 
 **Content is data-driven.** Most page copy lives in typed TS modules, not in the page files:
 - `src/data/*`: services, service-details, portfolio(-details), case-studies, blog-posts, guides, testimonials, faq, team, metrics, tools, etc. Types are in `src/types/*`.
@@ -39,6 +42,8 @@ There is no test suite. Verify changes with `npm run build`, since a static expo
 - **To add a service page:** add an entry to `service-details.ts` (and `services.ts` for the listing), then create `src/app/services/<slug>/page.tsx` the same way the existing ones do.
 
 **Components** (`@/*` → `src/*`): `components/layout` (Header, Footer, Navbar, MobileMenu, StrategyCallPopup, AppProviders), `components/sections/<page>/` (per-page sections), `components/ui` (primitives such as `Button`), `components/forms`. Use `cn()` from `src/lib/cn.ts` (clsx + tailwind-merge) for class names.
+
+**Navigation** lives in `src/config/navigation.ts`. An item with `children` renders as a dropdown button, not a link, so include the parent page as a child (see Products). Set `exact: true` on a child that should highlight only on its own path.
 
 **Root layout** (`src/app/layout.tsx`) loads the Outfit and Nunito Sans fonts, an intro preflight script (`src/config/intro.ts`), Google Analytics (`G-Q7YT6PCNCN`), and wraps every page in Header, `<main>` and Footer.
 
@@ -56,3 +61,23 @@ Note the two context folders: `src/context/` (Navigation, Theme) and `src/contex
 - Logo: use `Logo variant="light"` in the header and `variant="dark"` in the footer. Never recolor the logo or add shadows or effects to it.
 
 Product scope and the target site map are in `PRD_TRD_247_Website.txt` and `247 New Website Site Map.txt`. Many site-map pages don't exist yet.
+
+## Team workflow
+
+Two people (agathale79 and saathale) work on this repo, each with their own Claude Code on their own machine. Setup steps are in `docs/TEAM_SETUP.md`.
+
+- **Never push directly to `main`**, because that deploys immediately. Create a branch (`feat/…`, `fix/…`, `content/…`, `docs/…`), push it, and open a PR with `gh pr create`.
+- Pull `main` before starting new work (`git checkout main && git pull`) to avoid conflicts with the other person's merged changes.
+- Before merging, check that CI passes and the deploy preview looks right. Merge with `gh pr merge <n> --squash --delete-branch`, then confirm the live page loads.
+- Only merge or deploy when the person you're working with asks for it.
+
+## Content rules
+
+These are business decisions, not code conventions. Follow them in any copy you write.
+
+- **JobFlow** (`/products/jobflow/`, content in `src/data/jobflow.ts`) is 247DigitalPro's own product. Its launch client must stay **fully anonymous**: no client name, logo, pricing or real volumes, and no real screenshots. Mock-ups use sample data.
+- Present only **live** JobFlow features as available. Planned features go only in the labeled roadmap section.
+- Call CompanyCam and ShopVox **"third-party CRMs"** in public copy. Zapier, Google Calendar and email can be named.
+- The JobFlow call to action is **"Request a Demo"**, which opens the existing lead popup with JobFlow selected.
+- Keep the generic "CRM Platform" card on `/products`; JobFlow is a separate featured product.
+- The **`/tools` portal and its Firebase/API configuration are on hold.** Don't change `/tools` code or its Netlify/Firebase setup unless explicitly asked.
